@@ -9,7 +9,7 @@
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
         <title>Natours | Exciting tours for adventurous people</title>
-        
+       
         <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
         <script type="text/javascript">
             $(window).on('scroll',function(){
@@ -21,10 +21,12 @@
                }
             })
         </script>
+    
     </head> 
     <body>
-        <div class="wrapper">
-            <nav>
+        <header class="wrapper">
+        
+            <nav class="clearfix">
                 <div class="logo">
                     <img src="img/logo-green-small-1x.png" alt="Logo">   
                 </div>
@@ -33,11 +35,25 @@
                     <li><a href="#">About</a></li>
                     <li><a href="#">Tour Packages</a></li>
                     <li><a href="#">Enquiry</a></li>
+                    <?php
+                        if(isset($_SESSION['username']))
+                        {   
+                    ?>
                     <li><a class="active" href="logout.php">Log Out</a></li>
+                    <?php
+                        }
+                        else {
+                    ?>
+
+                    <li><a class="active" href="login.php">Log In</a></li>
+                    <?php
+                        }
+                    ?>
                 </ul>
             </nav>
-            <section class="sec1"></section>
-            <section class="content">
+        
+        </header>
+        <section class="content">
                 <br><br>
                 <h1>NATOURS TOURS<h1><br>
                 <p>
@@ -52,11 +68,121 @@
                 Natours covers all domestic destinations from the popular to the niche, and gives multiple package options to choose from. Internationally it covers all popular destinations and offers budget group tours too to these places. Some of its most popular international destinations are Paris, London, Switzerland, South Africa, Australia, Dubai, Thailand, USA, Canada, Singapore, Maldives and Mauritius.    
                 </p>
                 <br><br>
-            </section>
-            <section class="tour_packages">
+        </section>
+        <section class="tour_packages">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="img/video.mp4" type="video/mp4">
+                    <source src="img/video.webm" type="video/webm">
+                    your browser is not supported!
+                </video>
+            </div>
+            <!--
+            <div class="tour_title">
+                <h1 class="heading-secondary">
+                    We make people genuinely happy
+                </h1>
+            </div>
+            -->
+            <div class="tour">
+                <img src="img/house-1.jpeg" alt="Tour 1" class="tour__img">
+                <h5 class="tour__name">Tour Place1</h5>
+                <div class="tour__location">
+                    <svg>
+                       <use xlink:href="img/sprite.svg#icon-map-pin"></use> 
+                    </svg>
+                    <p>USA</p>
+                </div>
+                <div class="tour__days">
+                    <svg>
+                       <use xlink:href="img/sprite.svg#icon-profile-male"></use> 
+                    </svg>
+                    <p>5 days</p>
+                </div>
+                <div class="tour__price">
+                    <svg>
+                       <use xlink:href="img/sprite.svg#icon-key"></use> 
+                    </svg>
+                    <p>$1000</p>
+                </div>
+                <button class="btn tour__btn">Book</button>
+            </div>
 
-            </section>
-            
-        </div>
+            <div class="tour">
+                <img src="img/house-1.jpeg" alt="Tour 1" class="tour__img">
+                <h5 class="tour__name">Tour Place2</h5>
+                <div class="tour__location">
+                    <svg>
+                       <use xlink:href="img/sprite.svg#icon-map-pin"></use> 
+                    </svg>
+                    <p>USA</p>
+                </div>
+                <div class="tour__days">
+                    <svg>
+                       <use xlink:href="img/sprite.svg#icon-profile-male"></use> 
+                    </svg>
+                    <p>5 days</p>
+                </div>
+                <div class="tour__price">
+                    <svg>
+                       <use xlink:href="img/sprite.svg#icon-key"></use> 
+                    </svg>
+                    <p>$1000</p>
+                </div>
+                <button class="btn tour__btn">Book</button>
+            </div>
+
+            <div class="tour">
+                <img src="img/house-1.jpeg" alt="Tour 1" class="tour__img">
+                <h5 class="tour__name">Tour Place3</h5>
+                <div class="tour__location">
+                    <svg>
+                       <use xlink:href="img/sprite.svg#icon-map-pin"></use> 
+                    </svg>
+                    <p>USA</p>
+                </div>
+                <div class="tour__days">
+                    <svg>
+                       <use xlink:href="img/sprite.svg#icon-profile-male"></use> 
+                    </svg>
+                    <p>5 days</p>
+                </div>
+                <div class="tour__price">
+                    <svg>
+                       <use xlink:href="img/sprite.svg#icon-key"></use> 
+                    </svg>
+                    <p>$1000</p>
+                </div>
+                <button class="btn tour__btn">Book</button>
+            </div>
+
+            <div class="tour">
+                <img src="img/house-1.jpeg" alt="Tour 1" class="tour__img">
+                <h5 class="tour__name">Tour Place4</h5>
+                <div class="tour__location">
+                    <svg>
+                       <use xlink:href="img/sprite.svg#icon-map-pin"></use> 
+                    </svg>
+                    <p>USA</p>
+                </div>
+                <div class="tour__days">
+                    <svg>
+                       <use xlink:href="img/sprite.svg#icon-profile-male"></use> 
+                    </svg>
+                    <p>5 days</p>
+                </div>
+                <div class="tour__price">
+                    <svg>
+                       <use xlink:href="img/sprite.svg#icon-key"></use> 
+                    </svg>
+                    <p>$1000</p>
+                </div>
+                <button class="btn tour__btn">Book</button>
+            </div>
+
+        </section>
+        <footer class="end">
+
+        </footer>
     </body>
 </html>

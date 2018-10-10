@@ -2,8 +2,17 @@
   margin: 0;
   padding: 0;
 }
+
 body{
   font-family: Quicksand;
+}
+
+.wrapper{
+  height: 100vh;
+  background-image:url(../img/nat-5.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
 }
 
 nav{
@@ -15,6 +24,7 @@ nav{
   padding: 10px 100px;
   box-sizing: border-box;
   transition: .3s;
+  z-index: 5;
 }
 
 nav.black{
@@ -68,12 +78,10 @@ nav ul li a.active{
   border-radius: 6px;
 }
 
-section.sec1{
-  width: 100%;
-  height: 100vh;
-  background: url(../img/nat-5.jpg);
-  background-size: cover;
-  background-position: center;
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .content{
@@ -93,9 +101,119 @@ section.sec1{
   text-align: center;
 }
 
+.heading-secondary{
+  text-align: center;
+  color:#32CD32;
+  top: 16px;
+}
 
+.bg-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
 
+  opacity: .15;
+}
 
+.bg-video__content{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.tour_packages{
+  top: -210px;
+  position: relative;
+  padding: 150px 0;
+  margin: 150px 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-gap: 7rem;
+}
+
+.tour{
+  background-color: #f9f7f6; 
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  z-index: 2;
+}
+
+.tour img{
+  width: 100%;
+  grid-column: 1 / -1;
+}
+
+.tour__name{
+  
+  grid-column: 1 / -1;
+  justify-self: center;
+  align-self: end;
+
+  width: 80%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: .5rem;
+  background-color: #101d2c;
+  color: #fff;
+  font-weight: 400;  
+  transform: translatey(-50%);
+}
+
+.tour__location svg{
+  fill: #32CD32;
+  height: 2rem;
+  width: 2rem;
+}
+
+.tour__days svg{
+  fill: #32CD32;
+  height: 2rem;
+  width: 2rem;
+}
+
+.tour__price svg{
+  fill: #32CD32;
+  height: 2rem;
+  width: 2rem;
+}
+
+.btn {
+  background-color: #55c57a;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: .8rem;
+  cursor: pointer;
+  text-align: center;
+  transition: all .2s;
+}
+
+.btn:hover {
+  background-color:#28b485;
+}
+
+.tour__btn{
+  grid-column: 1 / -1;
+}
+
+/*
+.story{
+   width: 75%;
+   margin:0 auto;
+   box-shadow: 0 3rem 6rem rgba(0,0,0,.1);
+   background-color: rgba(white,.6);
+   border-radius: 3px;
+   padding: 6rem;
+}*/
 
 
 
