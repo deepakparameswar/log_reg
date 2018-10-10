@@ -85,8 +85,32 @@
             </div>
             -->
             <div class="tour">
+                <img src="img/nat-9.jpg" alt="Tour 1" class="tour__img">
+                <h5 class="tour__name">Goa</h5>
+                <div class="tour__location">
+                    <svg>
+                       <use xlink:href="img/sprite.svg#icon-map-pin"></use> 
+                    </svg>
+                    <p>USA</p>
+                </div>
+                <div class="tour__days">
+                    <svg>
+                       <use xlink:href="img/sprite.svg#icon-profile-male"></use> 
+                    </svg>
+                    <p>5 days</p>
+                </div>
+                <div class="tour__price">
+                    <svg>
+                       <use xlink:href="img/sprite.svg#icon-key"></use> 
+                    </svg>
+                    <p>$1000</p>
+                </div>
+                <button class="btn tour__btn"><a href="item1.php">Book</a></button>
+            </div>
+
+            <div class="tour">
                 <img src="img/house-1.jpeg" alt="Tour 1" class="tour__img">
-                <h5 class="tour__name">Tour Place1</h5>
+                <h5 class="tour__name">Manali</h5>
                 <div class="tour__location">
                     <svg>
                        <use xlink:href="img/sprite.svg#icon-map-pin"></use> 
@@ -110,7 +134,7 @@
 
             <div class="tour">
                 <img src="img/house-1.jpeg" alt="Tour 1" class="tour__img">
-                <h5 class="tour__name">Tour Place2</h5>
+                <h5 class="tour__name">Taj Mahal</h5>
                 <div class="tour__location">
                     <svg>
                        <use xlink:href="img/sprite.svg#icon-map-pin"></use> 
@@ -134,31 +158,7 @@
 
             <div class="tour">
                 <img src="img/house-1.jpeg" alt="Tour 1" class="tour__img">
-                <h5 class="tour__name">Tour Place3</h5>
-                <div class="tour__location">
-                    <svg>
-                       <use xlink:href="img/sprite.svg#icon-map-pin"></use> 
-                    </svg>
-                    <p>USA</p>
-                </div>
-                <div class="tour__days">
-                    <svg>
-                       <use xlink:href="img/sprite.svg#icon-profile-male"></use> 
-                    </svg>
-                    <p>5 days</p>
-                </div>
-                <div class="tour__price">
-                    <svg>
-                       <use xlink:href="img/sprite.svg#icon-key"></use> 
-                    </svg>
-                    <p>$1000</p>
-                </div>
-                <button class="btn tour__btn">Book</button>
-            </div>
-
-            <div class="tour">
-                <img src="img/house-1.jpeg" alt="Tour 1" class="tour__img">
-                <h5 class="tour__name">Tour Place4</h5>
+                <h5 class="tour__name">Himalayam</h5>
                 <div class="tour__location">
                     <svg>
                        <use xlink:href="img/sprite.svg#icon-map-pin"></use> 
