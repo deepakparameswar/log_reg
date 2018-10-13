@@ -88,22 +88,13 @@
                 <img src="img/nat-9.jpg" alt="Tour 1" class="tour__img">
                 <h5 class="tour__name">Goa</h5>
                 <div class="tour__location">
-                    <svg>
-                       <use xlink:href="img/sprite.svg#icon-map-pin"></use> 
-                    </svg>
-                    <p>USA</p>
+                    <p>goa</p>
                 </div>
                 <div class="tour__days">
-                    <svg>
-                       <use xlink:href="img/sprite.svg#icon-profile-male"></use> 
-                    </svg>
-                    <p>5 days</p>
+                    <?php include('item_days.php')?>days
                 </div>
                 <div class="tour__price">
-                    <svg>
-                       <use xlink:href="img/sprite.svg#icon-key"></use> 
-                    </svg>
-                    <p>$1000</p>
+                    ₹<?php include('itemprice.php')?>
                 </div>
                 <button class="btn tour__btn"><a href="item1.php">Book</a></button>
             </div>

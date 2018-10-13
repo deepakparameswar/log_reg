@@ -11,7 +11,6 @@
     height: 100vh;
     background-color: #FFFAF0;
     background-size: cover;
-    background-position: top;
     position: relative;
   }
   
@@ -83,18 +82,17 @@
     clear: both;
     display: table;
   }
-  
+
 .itempics{
-    position: absolute;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    z-index: 2;
+  position: absolute;
+  display: grid;
+  margin-left: 1%;
 }
 
 .tour__img{
-    width: 80%;
-    margin-top: 115px;
-    grid-column: 1 / 1;
+  width:40%;
+  margin-top: 115px;
+  grid-column: 1 / 1;
 }
 
 .item_heading{
@@ -112,12 +110,32 @@
     margin-left: 52%;
 }
 
-.btn{
-    color: #fff;
-    background-color: green;
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #28b485;
+  border: none;
+  border-radius: 5px;
 }
 
-  
+.btn:hover{
+  background: #7ed56f;
+}
+
+.package_details{
+  position: absolute;
+  margin-left: 1%;
+  margin-top: 37%;
+}
+
+.small_des{
+  margin-left: 45%;
+  margin-top: 15%;
+  color: #606060;
+  position: absolute;
+}
+
   
   
   

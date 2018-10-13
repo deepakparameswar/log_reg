@@ -74,8 +74,12 @@ if (isset($_POST['login_user'])) {
   	$results = mysqli_query($db, $query);
   	if (mysqli_num_rows($results) == 1) {
   	  $_SESSION['username'] = $username;
-  	  $_SESSION['success'] = "You are now logged in";
-  	  header('location: z.php');
+      $_SESSION['success'] = "You are now logged in";
+      if(isset($_SESSION['booked'])){
+        header('location:'.$_SESSION['booked']);
+      }else{
+        header('location: z.php');
+      }
   	}else {
   		array_push($errors, "Wrong username/password combination");
     }
