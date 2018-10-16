@@ -107,7 +107,7 @@
 .item_booking_form{
     position: absolute;
     margin-top: 33%;
-    margin-left: 52%;
+    margin-left: 45%;
 }
 
 .btn {
@@ -136,12 +136,14 @@
   position: absolute;
 }
 
-  
-  
-  
-  
-  
-  
+.small_des span{
+  color: #A9A9A9;
+}
+
+.review_area{
+  background-color: aliceblue;
+  padding: 25% 0;  
+}
   
   
   
